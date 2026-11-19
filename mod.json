@@ -1,0 +1,32 @@
+{
+	"geode": "4.6.0",
+	"gd": {
+		"win": "*",
+		"android": "*",
+		"mac": "*",
+		"ios": "*"
+	},
+	"id": "yourname.physics-vectors",
+	"name": "Physics Vectors",
+	"version": "v0.1.0",
+	"developer": "yourname",
+	"description": "Affiche les vecteurs de force du joueur (poids, reaction normale, impulsion de saut, resultante) en distinguant donnees mesurees et valeurs theoriques.",
+	"tags": ["utility", "interface", "gameplay"],
+	"settings": {
+		"enabled":        { "type": "bool",  "default": true,  "name": "Activer le mod" },
+		"show-weight":    { "type": "bool",  "default": true,  "name": "Poids (P)" },
+		"show-normal":    { "type": "bool",  "default": true,  "name": "Reaction normale (N)" },
+		"show-friction":  { "type": "bool",  "default": true,  "name": "Frottement (f)", "description": "Geometry Dash ne simule pas de frottement : seule une note explicative est affichee." },
+		"show-jump":      { "type": "bool",  "default": true,  "name": "Impulsion de saut (J)" },
+		"show-resultant": { "type": "bool",  "default": true,  "name": "Resultante (SF)" },
+		"show-formulas":  { "type": "bool",  "default": true,  "name": "Afficher les formules" },
+		"show-values":    { "type": "bool",  "default": true,  "name": "Afficher les valeurs numeriques" },
+		"show-info":      { "type": "bool",  "default": true,  "name": "Tableau d'informations" },
+		"show-panel":     { "type": "bool",  "default": true,  "name": "Panneau flottant" },
+		"display-mode":   { "type": "string", "default": "standard", "one-of": ["minimal", "standard", "detailed"], "name": "Mode d'affichage" },
+		"scale":          { "type": "float", "default": 1.0,  "min": 0.1, "max": 5.0, "name": "Echelle des vecteurs" },
+		"opacity":        { "type": "float", "default": 0.9,  "min": 0.1, "max": 1.0, "name": "Opacite" },
+		"text-size":      { "type": "float", "default": 1.0,  "min": 0.5, "max": 2.0, "name": "Taille du texte" },
+		"mass":           { "type": "float", "default": 1.0,  "min": 0.1, "max": 100.0, "name": "Masse choisie m", "description": "Parametre d'affichage : le moteur de GD n'a pas de masse." }
+	}
+}
