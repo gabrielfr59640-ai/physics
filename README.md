@@ -5,3 +5,4 @@ le workflow `.github/workflows/build.yml` compile iOS / Android / Windows / macO
 Local : `geode build` (CLI Geode).
 
 Avant la premiere compilation : remplacer `yourname` dans `mod.json`, ajuster `"geode"` a la version du SDK utilisee.
+to
